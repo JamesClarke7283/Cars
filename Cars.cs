@@ -11,8 +11,8 @@ namespace VehicleEngineLibrary
 
         private string model;
         private string make;        
-        private double fuel_liters;
-        private double maxFuel_liters;
+        private double fuel_litres;
+        private double maxFuel_litres;
 
         #endregion
 
@@ -24,22 +24,22 @@ namespace VehicleEngineLibrary
         {
             model = "N/A";
             make = "N/A";
-            maxFuel_liters = 0;
-            fuel_liters = 0;
+            maxFuel_litres = 0;
+            fuel_litres = 0;
         }
 
         /// <summary>
-        /// Constructor by setting car make, model and maximum fuel in liters
+        /// Constructor by setting car make, model and maximum fuel in litres
         /// </summary>
         /// <param name="CarMake">Brand/Make of car</param>
         /// <param name="CarModel">Type of car</param>
-        /// <param name="MaximumFuel">Maximum capacity of fuel tank in liters</param>
+        /// <param name="MaximumFuel">Maximum capacity of fuel tank in litres</param>
         public Cars(string CarMake, string CarModel, double MaximumFuel)
         {
             model = CarModel;
             make = CarMake;
-            fuel_liters = 0;
-            maxFuel_liters = MaximumFuel;
+            fuel_litres = 0;
+            maxFuel_litres = MaximumFuel;
         }
 
         #endregion
@@ -66,19 +66,19 @@ namespace VehicleEngineLibrary
         /// <summary>
         /// Returns the current fuel on the car
         /// </summary>
-        /// <returns>Current fuel in liters</returns>
+        /// <returns>Current fuel in litres</returns>
         public double GetCurrentFuel()
         {
-            return fuel_liters;
+            return fuel_litres;
         }
 
         /// <summary>
         /// Adds fuel in the car
         /// </summary>
-        /// <param name="amount">the amount of fuel to add in liters</param>
+        /// <param name="amount">the amount of fuel to add in litres</param>
         public void AddFuel(double amount)
         {
-            fuel_liters += amount;
+            fuel_litres += amount;
         }
         #endregion
     }
