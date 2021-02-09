@@ -21,7 +21,7 @@ namespace VehicleEngineLibrary
                 carIndex++;
             }
 
-            Console.WriteLine("Enter car: ");
+            Console.WriteLine("Enter car:  ");
             carNum = Console.ReadLine();
         }
 
