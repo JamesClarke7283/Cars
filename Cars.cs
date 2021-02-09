@@ -80,6 +80,11 @@ namespace VehicleEngineLibrary
         {
             fuel_litres += amount;
         }
+
+        public override string ToString()
+        {
+            return $"Cars(make={GetMakeName()} fuel={GetCurrentFuel()})";
+        }
         #endregion
     }
 }
